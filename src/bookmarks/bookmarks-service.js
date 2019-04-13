@@ -1,4 +1,7 @@
 const BookmarksService = {
+
+  // service.js functions handle CRUD req and res between server (express) and db (psql)
+
   getAllBookmarks(knex) {
     return knex.select('*').from('bookmarks')
   },
